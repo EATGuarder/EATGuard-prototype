@@ -1,0 +1,27 @@
+{
+  "name": "eatguard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Code and experiments for EATGuard.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "setup:experiments": "node scripts/setup-depth.mjs && node scripts/build-f3b.mjs",
+    "prototype": "node scripts/run-prototype.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "evaluate": "node scripts/run-all.mjs --profile full",
+    "evaluate:quick": "node scripts/run-all.mjs --profile quick"
+  },
+  "dependencies": {
+    "circomlib": "2.0.5",
+    "circomlibjs": "0.1.7",
+    "ethers": "6.15.0",
+    "ganache": "7.9.2",
+    "snarkjs": "0.7.5",
+    "solc": "0.8.30"
+  }
+}

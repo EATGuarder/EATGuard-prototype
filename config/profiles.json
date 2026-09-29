@@ -1,0 +1,48 @@
+{
+  "quick": {
+    "batchSizes": [
+      8
+    ],
+    "repeats": 1,
+    "aggregateBatchSize": 8,
+    "aggregateBatches": 10,
+    "faultRatios": [
+      0,
+      0.1,
+      0.3
+    ],
+    "depths": [
+      4,
+      8,
+      16,
+      24
+    ],
+    "depthSamples": 4,
+    "staticFaults": 8,
+    "admissionBatches": 2
+  },
+  "full": {
+    "batchSizes": [
+      8,
+      32,
+      128
+    ],
+    "repeats": 3,
+    "aggregateBatchSize": 32,
+    "aggregateBatches": 10,
+    "faultRatios": [
+      0,
+      0.1,
+      0.3
+    ],
+    "depths": [
+      4,
+      8,
+      16,
+      24
+    ],
+    "depthSamples": 128,
+    "staticFaults": 64,
+    "admissionBatches": 8
+  }
+}
